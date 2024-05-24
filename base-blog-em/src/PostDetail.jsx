@@ -1,13 +1,13 @@
-import { fetchComments } from "./api";
-import "./PostDetail.css";
+import { fetchComments } from './api'
+import './PostDetail.css'
 
 export function PostDetail({ post }) {
   // replace with useQuery
-  const data = [];
+  const data = []
 
   return (
     <>
-      <h3 style={{ color: "blue" }}>{post.title}</h3>
+      <h3 style={{ color: 'blue' }}>{post.title}</h3>
       <button>Delete</button> <button>Update title</button>
       <p>{post.body}</p>
       <h4>Comments</h4>
@@ -17,5 +17,5 @@ export function PostDetail({ post }) {
         </li>
       ))}
     </>
-  );
+  )
 }
